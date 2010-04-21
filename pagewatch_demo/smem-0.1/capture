@@ -1,0 +1,12 @@
+#!/bin/sh
+# example of capturing target data for smem
+
+# capture a memory data snapshot with realtime priority
+mkdir -p $1
+chrt --fifo 99 \
+  cp -a --parents /proc/[0-9]*/{smaps,cmdline,stat} /proc/meminfo $1
+
+# build a compressed tarball of snapshot
+cd $1/proc
+tar czf ../../$1.tgz *
+

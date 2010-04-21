@@ -1,0 +1,2 @@
+Pin 2.6 kit 27863
+E: An INS_InsertThenCall() must be immediately preceded by a INS_InsertIfCall()

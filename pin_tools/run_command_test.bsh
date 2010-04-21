@@ -1,0 +1,2 @@
+#!/bin/bash
+../../../pin -slow-asserts -smc_support 0 -t obj-intel64/mem_trace_st.so -o test -- /home/kshitij/parsec-2.1/parsec-2.1-precompiled/pkgs/apps/swaptions/inst/amd64-linux.gcc-hooks.pre/bin/swaptions -ns 2 -sm 100 -nt 1
